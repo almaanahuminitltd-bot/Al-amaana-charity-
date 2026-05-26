@@ -1,0 +1,57 @@
+# ═══════════════════════════════════════════════════
+# robots.txt — Al-Amaana for Humanitarian Initiative
+# Site: https://al-amaanaforhumanitarianintiative.org
+# ═══════════════════════════════════════════════════
+
+# Allow all well-behaved search engine crawlers
+User-agent: *
+Allow: /
+
+# Block access to any admin or private paths (future-proofing)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /*.log$
+Disallow: /*.env$
+
+# ── Google ──────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+# ── Bing ────────────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5
+
+# ── Yandex ──────────────────────────────────────────
+User-agent: Yandex
+Allow: /
+Crawl-delay: 10
+
+# ── DuckDuckGo ──────────────────────────────────────
+User-agent: DuckDuckBot
+Allow: /
+
+# ── Block known bad bots ────────────────────────────
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# ── Sitemap location ────────────────────────────────
+Sitemap: https://al-amaanaforhumanitarianintiative.org/sitemap.xml
